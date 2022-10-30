@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Colored Text
+CHARACTER='\033[0;34m'
+CONSOLE='\033[0;31m'
+DEFAULT='\033[0m'
+
+echo -e "${CHARACTER}(Grandfather): Hey kiddo did you get lost already? Well 
+here's some help if you do (cd ..) you can retrace your steps and then do (ls) 
+to look around again.${DEFAULT}"
