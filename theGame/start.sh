@@ -38,7 +38,10 @@ read -p "Enter selection [1 or 0] > " selection
 
 #Act on selection
 case $selection in
-        1)  echo "Starting Game"
+        1)  echo "Loading Game..."
+        sleep 1
+        echo "Press any key to continue"
+        read -n 1
 		source ./room0.sh
 		break
             ;;
