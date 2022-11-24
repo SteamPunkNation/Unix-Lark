@@ -1,11 +1,11 @@
 Welcome to LARK
 >>>>>>>the Linux Activity to Reinforce Knowledge
 
-Name of game: Don't Type This Command
+Name of game: Don't Press the Button
 
 Developed by: Andrew Donate & Travis Mccormick
 
-Narrative: Just don't type in the command...it's that easy...don't fail
+Narrative: Just do not touch the button
 
 Instructions:
 Follow the answer prompts to guide you in your adventure.

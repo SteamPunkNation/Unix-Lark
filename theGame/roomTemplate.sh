@@ -1,13 +1,23 @@
 #!/bin/bash
 
+#NOTE FOR TESTING DIRECTLY ./roomTemplate.sh
+#THIS WILL NOT MAKE THE CONSOLE GREEN BY DEFAULT
+#YOU WILL NEED TO MAKE SURE IT WORKS WITH THE FIRST
+#ROOM AS TO NOT BREAK THE GAME
+#########################
 #Variables
 
 #Color Vars
+#Colors can be added but these were just some
+#that I thought should be universal 
+#with all the rooms
 PersonColor="$(tput setaf 6)"
 DefaultColor="$(tput setaf 2)"
 ImportantColor="$(tput setaf 1)"
 
 #Text Vars
+#Help info should be constant if needed change
+#It should be changed accross all files.
 helpInfo=(
 	"Commands:"
 	"btn: Press the button"
@@ -17,22 +27,24 @@ helpInfo=(
 	"quit: Quit game"
 )
 btnPress=(
-	"Upon pressing the button you notice blood leaking through the seams of the walls."
-	"The room fills with blood from the floor to the ceiling."
-	"You drown in the room of blood and are never seen again."
+	"Button was pressed."
 	"${ImportantColor}Game Over${DefaultColor}"
+	#Change this to your fitting
+	#or don't use it at all
+	#recommended to keep game over if btn in 
+	#your case ends the game
 )
 lookAround=(
-	"Upon looking around you notice a few things."
-	"There is only one locked door."
-	"There is a desk in the middle of the room."
-	"There also appears to be a mirror that is broken."
-	"It reeks of black mold."
+	"Room is empty."
+	#Fill this section with how you want to
+	#describe the room and it's surrounding
+	#objects that you can interact with.
 )
 
 
 #########################
 #Functions
+#Again should be constant
 function HelpInfo(){
 for str in "${helpInfo[@]}"; do
 	echo $str
@@ -43,14 +55,17 @@ echo ""
 function RoomChange(){
 	read -p "Where do you want to go? >" selection
 	case $selection in 
-		B2)
+		Z1)
+			#This can be changed
 			echo "Next room confirmed"
+			#THIS MUST BE ADDED AS TO QUIT THE ENTIRE
+			#GAME OR ELSE IT LOOPS BACK TO PREVIOUS
+			#SCRIPT
 			break
 		;;
-		back)
-			./room0.sh
-			break
-		;;
+		#You should also make it so the play can go back
+		#a room when you add more options in this
+		#function
 		*)
 			echo "Not a valid room!"
 		;;
@@ -65,7 +80,6 @@ function ButtonPressed(){
 		sleep 1
 	done
 	read -p "Press any key to exit"
-	break
 }
 #Should be constant
 function LookAround(){
@@ -77,11 +91,15 @@ function LookAround(){
 #########################
 #Start of the actual room
 clear
-echo "**Entered room (B1)**"
+echo "**Entered room (#)**"
 
 while [[ $REPLY != 0 ]]; do
 	read -p "What do you want to do? >" selection
 	case $selection in
+		#More cases can be added but it is 
+		#recommended to make functions first then
+		#add cases to make it look cleaner and
+		#easier to read
 		ls)
 			LookAround
 		;;
@@ -92,7 +110,12 @@ while [[ $REPLY != 0 ]]; do
 			RoomChange
 		;;
 		btn)
+			#In most cases I believe pushing the button
+			#should make it so the game ends
+			#but you can remove the break cmd
+			#if you choose so
 			ButtonPressed
+			break
 		;;
 		quit)
 			break
