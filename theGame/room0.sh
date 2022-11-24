@@ -43,6 +43,15 @@ lookAround=(
 #########################
 #Functions
 
+function IntroStory(){
+for str in "${introArray[@]}"; do
+	echo $str
+	sleep 1
+done
+read -n 1
+clear
+}
+
 function HelpInfo(){
 for str in "${helpInfo[@]}"; do
 	echo $str
@@ -89,6 +98,8 @@ function LookAround(){
 }
 #########################
 #Start of the room
+sleep 3
+IntroStory
 while [[ $REPLY != 0 ]]; do
 read -p "What do you want to do? > " selection
 case $selection in
