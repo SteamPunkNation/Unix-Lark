@@ -1,7 +1,11 @@
 #!/bin/bash
 
+#NOTE FOR TESTING DIRECTLY ./roomTemplate.sh
+#THIS WILL NOT MAKE THE CONSOLE GREEN BY DEFAULT
+#YOU WILL NEED TO MAKE SURE IT WORKS WITH THE FIRST
+#ROOM AS TO NOT BREAK THE GAME
+#########################
 #Variables
-room_A2=false
 
 #Color Vars
 #Colors can be added but these were just some
@@ -19,29 +23,25 @@ helpInfo=(
 	"btn: Press the button"
 	"ls: Look at your surroundings"
 	"cd: Change your location"
-	"inspect: Look closer at certain objects"
 	"help: For this list"
 	"quit: Quit game"
 )
 btnPress=(
-	"You pressed the button"
-	"A giant save icon appears in the middle of the room"
-	"The room goes black as the simulation powers down"
-	"You realize you're just a NPC"
+	"Button was pressed."
 	"${ImportantColor}Game Over${DefaultColor}"
+	#Change this to your fitting
+	#or don't use it at all
+	#recommended to keep game over if btn in 
+	#your case ends the game
 )
 lookAround=(
-	"Room is bare with a single light and a desk"
-	"A label A2 is shown on top of the door"
-	"Next to the door is a keypad"
+	"Room is empty."
+	#Fill this section with how you want to
+	#describe the room and it's surrounding
+	#objects that you can interact with.
 )
-deskinfo=(
-	"The desk is small with a bunch of sticky notes on it"
-	"The sticky notes all have random pictures but you can easily disipher 3 of them,"
-	"a boy having cake in his favority pizzaria, the banner above him has a big 5 on it,"
-	"a picture of the button but with DONT PRESS written 3 times,"
-	"and a mysterious 4 legged animal...i wonder what it is"
-)
+
+
 #########################
 #Functions
 #Again should be constant
@@ -55,19 +55,17 @@ echo ""
 function RoomChange(){
 	read -p "Where do you want to go? >" selection
 	case $selection in 
-		A2)
-			if [[ $room_A2 == true ]]
-			then
-				echo "Next room confirmed"
-				./roomA2.sh
-				break
-			else 
-				echo "Door is still locked"
-			fi
+		Z1)
+			#This can be changed
+			echo "Next room confirmed"
+			#THIS MUST BE ADDED AS TO QUIT THE ENTIRE
+			#GAME OR ELSE IT LOOPS BACK TO PREVIOUS
+			#SCRIPT
+			break
 		;;
-		back)
-			echo "The door behind you is shut tight"
-		;;
+		#You should also make it so the play can go back
+		#a room when you add more options in this
+		#function
 		*)
 			echo "Not a valid room!"
 		;;
@@ -83,34 +81,6 @@ function ButtonPressed(){
 	done
 	read -p "Press any key to exit"
 }
-
-function Inspection(){
-	read -p "What do you want to inspect? > " selection
-	case $selection in
-		desk)
-			for str in "${deskinfo[@]}"; do
-				echo $str
-				sleep 1
-			done
-		;;
-		keypad)
-			read -p "Enter the 4 digit code here > " selection
-			if [[ $selection == 3534 ]]
-			then
-				echo "You hear a slight click"
-				room_A2= true
-			else
-				echo "Wrong code"
-			fi
-		;;
-		light)
-			echo "Did you really just try to inspect a light?"
-		;;
-		*)
-			echo "Theres nothing special about that"
-		;;
-	esac
-}
 #Should be constant
 function LookAround(){
 	for str in "${lookAround[@]}"; do
@@ -121,13 +91,15 @@ function LookAround(){
 #########################
 #Start of the actual room
 clear
-echo "**Entered room (A1)**"
+echo "**Entered room (#)**"
 
 while [[ $REPLY != 0 ]]; do
-	read -p "What do you want to do? > " selection
+	read -p "What do you want to do? >" selection
 	case $selection in
 		#More cases can be added but it is 
-		#recommended to make functions first
+		#recommended to make functions first then
+		#add cases to make it look cleaner and
+		#easier to read
 		ls)
 			LookAround
 		;;
@@ -144,9 +116,6 @@ while [[ $REPLY != 0 ]]; do
 			#if you choose so
 			ButtonPressed
 			break
-		;;
-		inspect)
-			Inspection
 		;;
 		quit)
 			break
