@@ -87,7 +87,6 @@ read -p "Enter selection [1 or 0] > " selection
 #Act on selection
 case $selection in
         1) IntroStory
-	cp ./ResetData.sh ./PlayerData.sh	
         Start
         break
         ;;

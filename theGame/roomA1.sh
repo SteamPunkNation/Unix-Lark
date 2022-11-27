@@ -74,9 +74,6 @@ function RoomChange(){
 	esac
 }
 function ButtonPressed(){
-	#This should be changed every room to make the
-	#button's interactions be unique
-
 	for str in "${btnPress[@]}"; do
 		echo $str
 		sleep 1
@@ -98,7 +95,7 @@ function Inspection(){
 			if [[ $selection == 3534 ]]
 			then
 				echo "You hear a slight click"
-				room_A2= true
+				room_A2=true
 			else
 				echo "Wrong code"
 			fi
@@ -138,10 +135,6 @@ while [[ $REPLY != 0 ]]; do
 			RoomChange
 		;;
 		btn)
-			#In most cases I believe pushing the button
-			#should make it so the game ends
-			#but you can remove the break cmd
-			#if you choose so
 			ButtonPressed
 			break
 		;;
