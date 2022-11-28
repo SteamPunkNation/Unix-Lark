@@ -42,8 +42,7 @@ btnPress=(
 lookAround=(
 	"Room is bare but a lot more coloful than the previous rooms"
 	"Straight ahead there is a door with \"A3\" written on it"
-	"On the walls there are four pictures each with a different shape"
-	"(use inspect then picture to look at the pictures)"
+	"On the walls there are four (pictures) each with a different shape"
 )
 #########################
 #Functions
@@ -87,7 +86,7 @@ function Inspection(){
 	read -p "What do you want to inspect? > " selection
 	case $selection in
 		pictures)
-			echo "There are 4 pictures, a triangle, a square, a pentagon, and an octogon"
+			echo "There are 4 pictures, a (triangle), a (square), a (pentagon), and an (octogon)"
 			read -p "Which picture do you want to look at? > " temp
 			case $temp in
 				triangle) echo "The triangle is green, there is a button under it"
@@ -101,7 +100,7 @@ function Inspection(){
 					then
 						Square=false
 						Pentagon=false
-						Octogon=flase
+						Octogon=false
 					fi
 				;;
 				square) echo "The square is red, there is a button under it"

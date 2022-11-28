@@ -31,9 +31,9 @@ btnPress=(
 	"${ImportantColor}Game Over${DefaultColor}"
 )
 lookAround=(
-	"Room is bare with a single light and a desk"
+	"Room is bare with a single (light) and a (desk)"
 	"A label A2 is shown on top of the door"
-	"Next to the door is a keypad"
+	"Next to the door is a (keypad)"
 )
 deskinfo=(
 	"The desk is small with a bunch of sticky notes on it"
