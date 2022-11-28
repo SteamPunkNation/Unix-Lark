@@ -23,7 +23,6 @@ helpInfo=(
 	"btn: Press the button"
 	"ls: Look at your surroundings"
 	"cd: Change your location"
-	"cat: Inspects items, anything in () is the name you should enter."
 	"help: For this list"
 	"quit: Quit game"
 )
@@ -92,7 +91,7 @@ function LookAround(){
 #########################
 #Start of the actual room
 clear
-echo "**Entered room (#)**"
+echo "**Entered room (B3)**"
 echo "CONGRATS YOU'VE GOTTEN ENDING 1/?"
 echo "Try doing the other path to get other endings?"
 read -p "Press any key to exit"
@@ -132,4 +131,4 @@ read -p "Press any key to exit"
 # 	echo "Press any key to continue"
 # 	read -n 1
 # 	clear
-# done
+#done

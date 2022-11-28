@@ -19,7 +19,7 @@ helpInfo=(
 	"btn: Press the button"
 	"ls: Look at your surroundings"
 	"cd: Change your location"
-	"inspect: Look closer at certain objects"
+	"cat: Inspects items, anything in () is the name you should enter."
 	"help: For this list"
 	"quit: Quit game"
 )
@@ -138,7 +138,7 @@ while [[ $REPLY != 0 ]]; do
 			ButtonPressed
 			break
 		;;
-		inspect)
+		cat)
 			Inspection
 		;;
 		quit)

@@ -25,6 +25,7 @@ helpInfo=(
     "btn: Press the button"
     "ls: Look around your surroundings"
     "cd: Change your location Ex: 'cd A1'"
+    "cat: Inspects items, anything in () is the name you should enter."
     "help: List availible commands"
     "quit: Quit game"
 )
@@ -52,7 +53,7 @@ function Start(){
     #Start of the actual room
     clear
     echo "**Entered room (0)**"
-    #IntroStory
+    IntroStory
     clear
     echo "Here are some commands you can use. If you're ever stuck type 'help'"
     HelpInfo
@@ -85,18 +86,18 @@ read -p "Enter selection [1 or 0] > " selection
    tput cup 11 0
 
 #Act on selection
-case $selection in
-        1) IntroStory
-        Start
-        break
+    case $selection in
+        1)
+            Start
+            break
         ;;
         0)  
-        break
+            break
         ;;
         *)  
-        echo "Invalid entry."
+            echo "Invalid entry."
         ;;
-      esac
+    esac
       echo "Press any key to continue"
       read -n 1
 done

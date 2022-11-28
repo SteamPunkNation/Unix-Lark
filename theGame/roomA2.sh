@@ -24,7 +24,7 @@ helpInfo=(
 	"btn: Press the button"
 	"ls: Look at your surroundings"
 	"cd: Change your location"
-	"inspect: Look closer at certain objects"
+	"cat: Inspects items, anything in () is the name you should enter."
 	"help: For this list"
 	"quit: Quit game"
 )
@@ -36,7 +36,7 @@ btnPress=(
 	"A red beam shoots from what looks like an eye"
 	"The beam searches the room before it lands on you"
 	"(robot): There you are"
-	"Guns pop out from the side of the tuny robot...you didn't even have time to run"
+	"Guns pop out from the side of the tiny robot...you didn't even have time to run"
 	"${ImportantColor}Game Over${DefaultColor}"
 )
 lookAround=(
@@ -183,7 +183,7 @@ while [[ $REPLY != 0 ]]; do
 			ButtonPressed
 			break
 		;;
-		inspect)
+		cat)
 			Inspection
 		;;
 		quit)
