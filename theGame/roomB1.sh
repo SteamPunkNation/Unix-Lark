@@ -13,6 +13,7 @@ helpInfo=(
 	"btn: Press the button"
 	"ls: Look at your surroundings"
 	"cd: Change your location"
+	"cat: Inspects items, anything in () is the name you should enter."
 	"help: For this list"
 	"quit: Quit game"
 )
@@ -25,8 +26,8 @@ btnPress=(
 lookAround=(
 	"Upon looking around you notice a few things."
 	"There is only one locked door."
-	"There is a desk in the middle of the room."
-	"There also appears to be a mirror that is broken."
+	"There is a (desk) in the middle of the room."
+	"There also appears to be a (mirror) that is broken."
 	"It reeks of black mold."
 )
 
@@ -74,6 +75,33 @@ function LookAround(){
 		sleep 1
 	done
 }
+##############################
+#May be added to room template
+function Inspect(){
+	read -p "What do you want to inspect? >" inspectedObject
+	case $inspectedObject in
+		mirror)
+		echo "You look into the mirror and only see multiple reflections of yourself."
+		echo "You ponder on why you even tried looking at a broken mirror."
+		;;
+		desk)
+		InspectDesk
+		;;
+		*)
+		echo "Invalid entry."
+		;;
+	esac
+}
+function InspectDesk(){
+	$roomKey = $(gawk '{print $1}' ./player.inv)
+	if [ $roomKey == "RoomKey_B1" ]
+	then
+		echo "There is nothing else to do here."
+	else
+		echo "You recieved a room key!"
+		echo "RoomKey_B1" > ./player.inv
+	fi
+}
 #########################
 #Start of the actual room
 clear
@@ -90,6 +118,9 @@ while [[ $REPLY != 0 ]]; do
 		;;
 		cd) 
 			RoomChange
+		;;
+		cat)
+			Inspect
 		;;
 		btn)
 			ButtonPressed
