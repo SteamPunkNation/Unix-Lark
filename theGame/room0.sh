@@ -43,11 +43,11 @@ function RoomChange(){
 	case $selection in 
 		A1)
 			./roomA1.sh
-			break
+			exit 0
 		;;
 		B1)
 			./roomB1.sh
-			break
+			exit 0
 		;;
 		back)
 			echo "There is no going back!"
@@ -94,10 +94,10 @@ case $selection in
 	;;
 	btn)
 		ButtonPressed
-		break
+		exit 0
 	;;
 	quit)
-		break
+		exit 0
 	;;
 	*) 
 		echo "Invalid entry."
