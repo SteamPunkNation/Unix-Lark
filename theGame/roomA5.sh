@@ -16,9 +16,8 @@ A5=(
 	"Well i guess i could give you something else"
 	"Here, i'll give you an option"
 	"You've only played half of this game"
-	"One timeline"
-	"There are still more puzzles made by someone much more smarter than me"
-	"Maybe his puzzles will challege you"
+	"There are still more puzzles"
+	"You can either continue to those other puzzles"
 	"or you can go right to the credits and be done"
 	"You're choice"
 )
