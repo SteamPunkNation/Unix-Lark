@@ -8,24 +8,12 @@ DefaultColor="$(tput setaf 2)"
 ImportantColor="$(tput setaf 1)"
 
 #Text Vars
-introArray=(
-	"${PersonColor}(Narrator): Hey you what are you doing here?"
-	"(Narrator): Actually nevermind."
-	"(Narrator): Hey are you busy? Cause I need a favor..."
-	"(Narrator): Could you watch this button for me? I need to use the bathroom."
-	"(Narrator): You just hold on to this and whatever you do"
-	"${PersonColor}(Narrator): ${ImportantColor}DON'T"
-	"${PersonColor}(Narrator): ${ImportantColor}PRESS"
-	"${PersonColor}(Narrator): ${ImportantColor}THE"
-	"${PersonColor}(Narrator): ${ImportantColor}BUTTON."
-	"${PersonColor}(Narrator): Thanks, I'll be back in a bit."
-	"${DefaultColor}Press any key to continue"
-)
 helpInfo=(
 	"Commands:"
 	"btn: Press the button"
 	"ls: Look around your surroundings"
 	"cd: Change your location Ex: 'cd A1'"
+	"cat: Inspects items, anything in () is the name you should enter."
 	"help: List availible commands"
 	"quit: Quit game"
 )
@@ -100,6 +88,9 @@ case $selection in
 	;;
 	cd) 
 		RoomChange
+	;;
+	cat)
+		echo "There is currently nothing to inspect!"
 	;;
 	btn)
 		ButtonPressed

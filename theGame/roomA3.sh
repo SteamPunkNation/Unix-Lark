@@ -16,7 +16,7 @@ helpInfo=(
 	"btn: Press the button"
 	"ls: Look at your surroundings"
 	"cd: Change your location"
-	"cat: used to inspect items"
+	"cat: Inspects items, anything in () is the name you should enter."
 	"help: For this list"
 	"quit: Quit game"
 )
@@ -151,7 +151,6 @@ function LookAround(){
 #Start of the actual room
 clear
 echo "**Entered room (A3)**"
-
 while [[ $REPLY != 0 ]]; do
 	read -p "What do you want to do? > " selection
 	case $selection in
