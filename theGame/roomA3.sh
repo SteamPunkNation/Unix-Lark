@@ -97,7 +97,7 @@ function Inspection(){
 				do
 					BTN_NUM=$((BTN_NUM + 1))
 					echo "You pushed the button and it felt amazing"
-					read -p "wanna do it again? " choice
+					read -p "wanna do it again? (yes / no) " choice
 					if [[ $choice == yes ]]
 					then
 						continue
