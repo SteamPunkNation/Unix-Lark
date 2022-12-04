@@ -177,17 +177,16 @@ while [[ $REPLY != 0 ]]; do
 		;;
 		cd) 
 			RoomChange
-			break
 		;;
 		btn)
 			ButtonPressed
-			break
+			exit 0
 		;;
 		inspect)
 			Inspection
 		;;
 		quit)
-			break
+			exit 0
 		;;
 		*) 
 			echo "Invalid entry."

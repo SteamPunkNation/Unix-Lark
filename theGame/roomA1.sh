@@ -60,7 +60,7 @@ function RoomChange(){
 			then
 				echo "Next room confirmed"
 				./roomA2.sh
-				break
+				exit 0
 			else 
 				echo "Door is still locked"
 			fi
@@ -136,13 +136,13 @@ while [[ $REPLY != 0 ]]; do
 		;;
 		btn)
 			ButtonPressed
-			break
+			exit 0
 		;;
 		inspect)
 			Inspection
 		;;
 		quit)
-			break
+			exit 0
 		;;
 		*) 
 			echo "Invalid entry."
