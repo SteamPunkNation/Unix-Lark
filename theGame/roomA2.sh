@@ -41,9 +41,14 @@ btnPress=(
 )
 lookAround=(
 	"Room is bare but a lot more coloful than the previous rooms"
+<<<<<<< Updated upstream
 	"Straight ahead there is a door with \"A3\" written on it"
 	"On the walls there are four pictures each with a different shape"
 	"(use inspect then picture to look at the pictures)"
+=======
+	"Straight ahead there is a (door) with \"A3\" written on it"
+	"On the walls there are four (pictures) each with a different shape"
+>>>>>>> Stashed changes
 )
 #########################
 #Functions
@@ -177,17 +182,17 @@ while [[ $REPLY != 0 ]]; do
 		;;
 		cd) 
 			RoomChange
-			break
+			exit 0
 		;;
 		btn)
 			ButtonPressed
-			break
+			exit 0
 		;;
 		inspect)
 			Inspection
 		;;
 		quit)
-			break
+			exit 0
 		;;
 		*) 
 			echo "Invalid entry."

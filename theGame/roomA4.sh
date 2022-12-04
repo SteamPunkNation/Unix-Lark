@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Variables
-room_A2=false
+room_A5=false
 
 #Color Vars
 #Colors can be added but these were just some
@@ -19,28 +19,16 @@ helpInfo=(
 	"btn: Press the button"
 	"ls: Look at your surroundings"
 	"cd: Change your location"
-	"inspect: Look closer at certain objects"
+	"cat: Inspects items, anything in () is the name you should enter."
 	"help: For this list"
 	"quit: Quit game"
 )
 btnPress=(
 	"You pressed the button"
-	"A giant save icon appears in the middle of the room"
-	"The room goes black as the simulation powers down"
-	"You realize you're just a NPC"
 	"${ImportantColor}Game Over${DefaultColor}"
 )
 lookAround=(
-	"Room is bare with a single light and a desk"
-	"A label A2 is shown on top of the door"
-	"Next to the door is a keypad"
-)
-deskinfo=(
-	"The desk is small with a bunch of sticky notes on it"
-	"The sticky notes all have random pictures but you can easily disipher 3 of them,"
-	"a boy having cake in his favority pizzaria, the banner above him has a big 5 on it,"
-	"a picture of the button but with DONT PRESS written 3 times,"
-	"and a mysterious 4 legged animal...i wonder what it is"
+	""
 )
 #########################
 #Functions
@@ -55,18 +43,17 @@ echo ""
 function RoomChange(){
 	read -p "Where do you want to go? >" selection
 	case $selection in 
-		A2)
-			if [[ $room_A2 == true ]]
+		A5)
+			if [[ $room_A5 == true ]]
 			then
 				echo "Next room confirmed"
-				./roomA2.sh
-				exit 0
+				./roomA5.sh
 			else 
 				echo "Door is still locked"
 			fi
 		;;
-		back)
-			echo "The door behind you is shut tight"
+		A4)
+			./roomA4.sh
 		;;
 		*)
 			echo "Not a valid room!"
@@ -84,24 +71,8 @@ function ButtonPressed(){
 function Inspection(){
 	read -p "What do you want to inspect? > " selection
 	case $selection in
-		desk)
-			for str in "${deskinfo[@]}"; do
-				echo $str
-				sleep 1
-			done
-		;;
-		keypad)
-			read -p "Enter the 4 digit code here > " selection
-			if [[ $selection == 3534 ]]
-			then
-				echo "You hear a slight click"
-				room_A2=true
-			else
-				echo "Wrong code"
-			fi
-		;;
-		light)
-			echo "Did you really just try to inspect a light?"
+		door)
+			echo "There is a note that reads A5"
 		;;
 		*)
 			echo "Theres nothing special about that"
@@ -118,7 +89,7 @@ function LookAround(){
 #########################
 #Start of the actual room
 clear
-echo "**Entered room (A1)**"
+echo "**Entered room (A4)**"
 
 while [[ $REPLY != 0 ]]; do
 	read -p "What do you want to do? > " selection
@@ -133,12 +104,13 @@ while [[ $REPLY != 0 ]]; do
 		;;
 		cd) 
 			RoomChange
+			break
 		;;
 		btn)
 			ButtonPressed
-			exit 0
+			break
 		;;
-		inspect)
+		cat)
 			Inspection
 		;;
 		quit)
