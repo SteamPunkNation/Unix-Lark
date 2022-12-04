@@ -16,8 +16,6 @@ DefaultColor="$(tput setaf 2)"
 ImportantColor="$(tput setaf 1)"
 
 #Text Vars
-#Help info should be constant if needed change
-#It should be changed accross all files.
 helpInfo=(
 	"Commands:"
 	"btn: Press the button"
@@ -81,6 +79,63 @@ function ButtonPressed(){
 	done
 	read -p "Press any key to exit"
 }
+<<<<<<< HEAD
+=======
+
+function Inspection(){
+	read -p "What do you want to inspect? > " selection
+	case $selection in
+		button)
+			echo "The big button taunts you"
+			read -p "Do you want to press the button? (yes / no) " choice
+			if [[ $choice == yes ]]
+			then
+				while [[ $BTN_NUM -le 4 ]]
+				do
+					BTN_NUM=$((BTN_NUM + 1))
+					echo "You pushed the button and it felt amazing"
+					read -p "wanna do it again? " choice
+					if [[ $choice == yes ]]
+					then
+						continue
+					else
+						break
+					fi
+				done
+			fi
+			if [[ $BTN_NUM == 5 ]]
+			then
+				room_A4=true
+				echo "The door is unlocked"
+				sleep 1
+				echo "I hope that helped"
+			fi
+		;;
+		door)
+			echo "There is a note that reads A4"
+			if [[ $room_A4 == true ]]
+			then
+				echo "The door is unlocked"
+			else
+				echo "The door is locked, try inspecting other things in the room"
+			fi
+		;;
+		note)
+			echo "Congrats!! You've made it halfway through my rooms"
+			sleep 1
+			echo "I know it's been tempting to push the button"
+			sleep 1
+			echo "I wonder how many lifes you've lived to make it here"
+			sleep 1
+			echo "Here is a big button to press to get all your temptations out"
+			sleep 1
+		;;
+		*)
+			echo "Theres nothing special about that"
+		;;
+	esac
+}
+>>>>>>> parent of 017a472 (Revert "Update roomA3.sh")
 #Should be constant
 function LookAround(){
 	for str in "${lookAround[@]}"; do
@@ -91,6 +146,7 @@ function LookAround(){
 #########################
 #Start of the actual room
 clear
+<<<<<<< HEAD
 echo "**Entered room (#)**"
 
 while [[ $REPLY != 0 ]]; do
@@ -100,6 +156,15 @@ while [[ $REPLY != 0 ]]; do
 		#recommended to make functions first then
 		#add cases to make it look cleaner and
 		#easier to read
+=======
+echo "**Entered room (A3)**"
+
+while [[ $REPLY != 0 ]]; do
+	read -p "What do you want to do? > " selection
+	case $selection in
+		#More cases can be added but it is 
+		#recommended to make functions first
+>>>>>>> parent of 017a472 (Revert "Update roomA3.sh")
 		ls)
 			LookAround
 		;;
@@ -110,6 +175,7 @@ while [[ $REPLY != 0 ]]; do
 			RoomChange
 		;;
 		btn)
+<<<<<<< HEAD
 			#In most cases I believe pushing the button
 			#should make it so the game ends
 			#but you can remove the break cmd
@@ -119,6 +185,16 @@ while [[ $REPLY != 0 ]]; do
 		;;
 		quit)
 			break
+=======
+			ButtonPressed
+			exit 0
+		;;
+		cat)
+			Inspection
+		;;
+		quit)
+			exit 0
+>>>>>>> parent of 017a472 (Revert "Update roomA3.sh")
 		;;
 		*) 
 			echo "Invalid entry."
@@ -127,4 +203,8 @@ while [[ $REPLY != 0 ]]; do
 	echo "Press any key to continue"
 	read -n 1
 	clear
+<<<<<<< HEAD
 done
+=======
+done
+>>>>>>> parent of 017a472 (Revert "Update roomA3.sh")
