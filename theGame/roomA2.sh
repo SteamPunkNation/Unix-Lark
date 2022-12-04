@@ -96,6 +96,7 @@ function Inspection(){
 						echo "You pushed the button"
 						room_A3=true
 						echo "There was a click at the door"
+						echo "***(hint: You might wanna remember those colors)***" 
 					elif [[ $choice == yes ]]
 					then
 						echo "Wrong order"
