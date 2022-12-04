@@ -13,8 +13,6 @@ DefaultColor="$(tput setaf 2)"
 ImportantColor="$(tput setaf 1)"
 
 #Text Vars
-#Help info should be constant if needed change
-#It should be changed accross all files.
 helpInfo=(
 	"Commands:"
 	"btn: Press the button"
@@ -87,13 +85,12 @@ function Inspection(){
 	case $selection in
 		button)
 			echo "The big button taunts you"
-			read -p "Do you want to press the button? " choice
+			read -p "Do you want to press the button? (yes / no) " choice
 			if [[ $choice == yes ]]
 			then
 				while [[ $BTN_NUM -le 4 ]]
 				do
-					$BTN_NUM++
-					echo $BTN_NUM
+					BTN_NUM=$((BTN_NUM + 1))
 					echo "You pushed the button and it felt amazing"
 					read -p "wanna do it again? " choice
 					if [[ $choice == yes ]]
@@ -146,17 +143,6 @@ function LookAround(){
 #########################
 #Start of the actual room
 clear
-<<<<<<< Updated upstream
-echo "**Entered room (#)**"
-
-while [[ $REPLY != 0 ]]; do
-	read -p "What do you want to do? >" selection
-	case $selection in
-		#More cases can be added but it is 
-		#recommended to make functions first then
-		#add cases to make it look cleaner and
-		#easier to read
-=======
 echo "**Entered room (A3)**"
 
 while [[ $REPLY != 0 ]]; do
@@ -164,7 +150,6 @@ while [[ $REPLY != 0 ]]; do
 	case $selection in
 		#More cases can be added but it is 
 		#recommended to make functions first
->>>>>>> Stashed changes
 		ls)
 			LookAround
 		;;
@@ -173,20 +158,6 @@ while [[ $REPLY != 0 ]]; do
 		;;
 		cd) 
 			RoomChange
-<<<<<<< Updated upstream
-		;;
-		btn)
-			#In most cases I believe pushing the button
-			#should make it so the game ends
-			#but you can remove the break cmd
-			#if you choose so
-			ButtonPressed
-			break
-		;;
-		quit)
-			break
-=======
-			exit 0
 		;;
 		btn)
 			ButtonPressed
@@ -197,7 +168,6 @@ while [[ $REPLY != 0 ]]; do
 		;;
 		quit)
 			exit 0
->>>>>>> Stashed changes
 		;;
 		*) 
 			echo "Invalid entry."
@@ -206,8 +176,4 @@ while [[ $REPLY != 0 ]]; do
 	echo "Press any key to continue"
 	read -n 1
 	clear
-<<<<<<< Updated upstream
 done
-=======
-done
->>>>>>> Stashed changes
