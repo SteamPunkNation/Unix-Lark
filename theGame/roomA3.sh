@@ -1,16 +1,11 @@
 #!/bin/bash
 
-#NOTE FOR TESTING DIRECTLY ./roomTemplate.sh
-#THIS WILL NOT MAKE THE CONSOLE GREEN BY DEFAULT
-#YOU WILL NEED TO MAKE SURE IT WORKS WITH THE FIRST
-#ROOM AS TO NOT BREAK THE GAME
-#########################
 #Variables
+room_A4=false
+BTN_NUM=0
+
 
 #Color Vars
-#Colors can be added but these were just some
-#that I thought should be universal 
-#with all the rooms
 PersonColor="$(tput setaf 6)"
 DefaultColor="$(tput setaf 2)"
 ImportantColor="$(tput setaf 1)"
@@ -21,22 +16,26 @@ helpInfo=(
 	"btn: Press the button"
 	"ls: Look at your surroundings"
 	"cd: Change your location"
+	"cat: used to inspect items"
 	"help: For this list"
 	"quit: Quit game"
 )
 btnPress=(
 	"Button was pressed."
+	"Really?"
+	"I give you a perfectly safe button to press and you choose to push the one you're not suppoed to push?"
+	"Nah"
+	"Nah"
+	"Nah"
+	"You deserve to restart"
 	"${ImportantColor}Game Over${DefaultColor}"
-	#Change this to your fitting
-	#or don't use it at all
-	#recommended to keep game over if btn in 
-	#your case ends the game
 )
 lookAround=(
-	"Room is empty."
-	#Fill this section with how you want to
-	#describe the room and it's surrounding
-	#objects that you can interact with.
+	"You stand in a brightly lit room"
+	"Across from you is a tightly shut (door)"
+	"The room is painted white and the entire room just seems clean"
+	"The only bit of color is a bright red (button) in the middle of the room"
+	"Under the button is a note"
 )
 
 
@@ -53,34 +52,38 @@ echo ""
 function RoomChange(){
 	read -p "Where do you want to go? >" selection
 	case $selection in 
-		Z1)
-			#This can be changed
-			echo "Next room confirmed"
-			#THIS MUST BE ADDED AS TO QUIT THE ENTIRE
-			#GAME OR ELSE IT LOOPS BACK TO PREVIOUS
-			#SCRIPT
-			break
+		A4)
+			if [[ $room_A4 == true ]]
+			then
+				./roomA4.sh
+				exit 0
+			else
+				echo "The door is still locked. Try cating more things"
+			fi
 		;;
-		#You should also make it so the play can go back
-		#a room when you add more options in this
-		#function
+		A2)
+			read -p "You will have to restart this room. Are you sure you want to go back? (yes / no) " choice
+			if [[ $choice == yes ]]
+			then
+				./roomA2.sh
+				exit 0
+			fi
+		;;
 		*)
 			echo "Not a valid room!"
 		;;
 	esac
 }
-function ButtonPressed(){
-	#This should be changed every room to make the
-	#button's interactions be unique
 
+function ButtonPressed(){
 	for str in "${btnPress[@]}"; do
 		echo $str
 		sleep 1
 	done
 	read -p "Press any key to exit"
 }
-<<<<<<< HEAD
-=======
+
+
 
 function Inspection(){
 	read -p "What do you want to inspect? > " selection
@@ -135,36 +138,23 @@ function Inspection(){
 		;;
 	esac
 }
->>>>>>> parent of 017a472 (Revert "Update roomA3.sh")
-#Should be constant
+
 function LookAround(){
 	for str in "${lookAround[@]}"; do
 		echo $str
 		sleep 1
 	done
 }
+
+
 #########################
 #Start of the actual room
 clear
-<<<<<<< HEAD
-echo "**Entered room (#)**"
-
-while [[ $REPLY != 0 ]]; do
-	read -p "What do you want to do? >" selection
-	case $selection in
-		#More cases can be added but it is 
-		#recommended to make functions first then
-		#add cases to make it look cleaner and
-		#easier to read
-=======
 echo "**Entered room (A3)**"
 
 while [[ $REPLY != 0 ]]; do
 	read -p "What do you want to do? > " selection
 	case $selection in
-		#More cases can be added but it is 
-		#recommended to make functions first
->>>>>>> parent of 017a472 (Revert "Update roomA3.sh")
 		ls)
 			LookAround
 		;;
@@ -175,26 +165,14 @@ while [[ $REPLY != 0 ]]; do
 			RoomChange
 		;;
 		btn)
-<<<<<<< HEAD
-			#In most cases I believe pushing the button
-			#should make it so the game ends
-			#but you can remove the break cmd
-			#if you choose so
 			ButtonPressed
 			break
-		;;
-		quit)
-			break
-=======
-			ButtonPressed
-			exit 0
 		;;
 		cat)
 			Inspection
 		;;
 		quit)
 			exit 0
->>>>>>> parent of 017a472 (Revert "Update roomA3.sh")
 		;;
 		*) 
 			echo "Invalid entry."
@@ -203,8 +181,4 @@ while [[ $REPLY != 0 ]]; do
 	echo "Press any key to continue"
 	read -n 1
 	clear
-<<<<<<< HEAD
 done
-=======
-done
->>>>>>> parent of 017a472 (Revert "Update roomA3.sh")
