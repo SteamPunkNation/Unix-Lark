@@ -90,6 +90,14 @@ function Inspection(){
 				sleep 1
 			done
 		;;
+		door)
+			if [[ $room_A2 == true ]]
+			then
+				echo "The door is unlocked"
+			else
+				echo "The door is locked. Try to unlock it"
+			fi
+		;;
 		keypad)
 			read -p "Enter the 4 digit code here > " selection
 			if [[ $selection == 3534 ]]

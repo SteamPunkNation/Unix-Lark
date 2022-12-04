@@ -41,7 +41,7 @@ btnPress=(
 )
 lookAround=(
 	"Room is bare but a lot more coloful than the previous rooms"
-	"Straight ahead there is a door with \"A3\" written on it"
+	"Straight ahead there is a (door) that is shut tight"
 	"On the walls there are four (pictures) each with a different shape"
 )
 #########################
@@ -98,6 +98,8 @@ function Inspection(){
 						echo "There was a click at the door"
 					elif [[ $choice == yes ]]
 					then
+						echo "Wrong order"
+						echo "All buttons reset"
 						Square=false
 						Pentagon=false
 						Octogon=false
@@ -111,6 +113,8 @@ function Inspection(){
 						Square=true
 					elif [[ $choice == yes ]]
 					then
+						echo "Wrong order"
+						echo "All butons reset"
 						Square=false
 						Pentagon=false
 						Octogon=false
@@ -124,6 +128,8 @@ function Inspection(){
 						Pentagon=true
 					elif [[ $choice == yes ]] 
 					then 
+						echo "Wrong Order"
+						echo "All buttons reset"
 						Square=false
 						Pentagon=false
 						Octogon=false
@@ -143,8 +149,13 @@ function Inspection(){
 			esac
 		;;
 		door)
-			echo "There is a note that reads A3, under it ther is small writing"
-			echo "\"Did you try going from greatest to least?\""
+			if [[ $room_A3 == false ]]
+			then
+				echo "There is a note that reads A3, under it ther is small writing"
+				echo "\"Did you try going from greatest to least?\""
+			else
+				echo "The door is open"
+			fi
 		;;
 		*)
 			echo "Theres nothing special about that"

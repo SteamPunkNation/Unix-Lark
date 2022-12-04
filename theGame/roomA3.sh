@@ -35,7 +35,7 @@ lookAround=(
 	"Across from you is a tightly shut (door)"
 	"The room is painted white and the entire room just seems clean"
 	"The only bit of color is a bright red (button) in the middle of the room"
-	"Under the button is a note"
+	"Under the button is a (note)"
 )
 
 
