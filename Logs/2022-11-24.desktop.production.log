@@ -1,0 +1,135 @@
+2022-11-24T20:17:46.437Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-24T20:17:46.438Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-24T20:17:46.817Z - info: [ui] [BranchPruner] No branches to prune.
+2022-11-24T20:17:46.822Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-24T20:17:46.822Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-24T20:17:47.290Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-11-24T20:17:47.577Z - info: [ui] Stats reported.
+2022-11-24T20:18:45.673Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-24T20:18:47.648Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 1.946s)
+2022-11-24T20:18:50.036Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-24T20:18:50.071Z - error: [ui] `git -c credential.helper= -c protocol.version=2 -c rebase.backend=merge pull --progress origin` exited with an unexpected code: 128.
+stderr:
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+2022-11-24T20:19:17.973Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-24T20:19:18.014Z - error: [ui] `git -c credential.helper= -c protocol.version=2 -c rebase.backend=merge pull --progress origin` exited with an unexpected code: 128.
+stderr:
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+2022-11-24T20:19:20.604Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-24T20:19:20.649Z - error: [ui] `git -c credential.helper= -c protocol.version=2 -c rebase.backend=merge pull --progress origin` exited with an unexpected code: 128.
+stderr:
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+2022-11-24T20:19:54.190Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-11-24T20:21:38.683Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-24T20:21:38.684Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-24T20:21:38.856Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-11-24T20:21:39.018Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-24T20:21:39.019Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-24T20:22:10.109Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/SteamPunkNation/Unix-Lark.git - TraviPatty03 (has token)
+2022-11-24T20:22:11.133Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-11-24T20:22:13.231Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-24T20:22:14.248Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 1.005s)
+2022-11-24T20:22:22.607Z - error: [ui] Highlighter worked failed for new contents
+Error: timed out
+    at /home/travis/webpack:/app/src/lib/highlighter/worker.ts:85:14
+2022-11-24T20:22:32.435Z - error: [ui] Highlighter worked failed for new contents
+Error: timed out
+    at /home/travis/webpack:/app/src/lib/highlighter/worker.ts:85:14
+2022-11-24T20:34:56.451Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 1 repositories took 0.2s of which 0.0s paused, total 0.2s
+2022-11-24T20:35:05.243Z - error: [ui] Highlighter worked failed for new contents
+Error: timed out
+    at /home/travis/webpack:/app/src/lib/highlighter/worker.ts:85:14
+2022-11-24T20:36:44.073Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 37.856s)
+2022-11-24T20:36:45.388Z - info: [ui] Executing createCommit: git commit -F - (took 1.310s)
+2022-11-24T20:36:45.542Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 39.333s
+2022-11-24T20:36:48.531Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-24T20:36:49.079Z - error: [ui] Highlighter worked failed for new contents
+Error: timed out
+    at /home/travis/webpack:/app/src/lib/highlighter/worker.ts:85:14
+2022-11-24T20:36:50.025Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin main:main --progress (took 1.476s)
+2022-11-24T20:36:59.080Z - error: [ui] Highlighter worked failed for new contents
+Error: timed out
+    at /home/travis/webpack:/app/src/lib/highlighter/worker.ts:85:14
+2022-11-24T20:53:41.322Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-24T20:53:41.323Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-24T20:53:41.480Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-11-24T20:53:41.514Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-24T20:53:41.514Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-24T20:54:07.675Z - info: [main] opening in browser: https://github.com/SteamPunkNation/Unix-Lark/commit/73c52ef532cb679f0dfd3d075734cc2a1effbb8f
+2022-11-24T20:55:05.794Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-24T20:58:28.648Z - error: [ui] Highlighter worked failed for new contents
+Error: timed out
+    at /home/travis/webpack:/app/src/lib/highlighter/worker.ts:85:14
+2022-11-24T20:58:32.002Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-24T20:58:32.003Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-24T20:58:32.172Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-11-24T20:58:32.288Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-24T20:58:32.288Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-24T20:58:47.418Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/SteamPunkNation/Unix-Lark.git - TraviPatty03 (has token)
+2022-11-24T20:58:48.888Z - info: [ui] Executing clone: git -c credential.helper= -c protocol.version=2 clone --recursive --progress -- https://github.com/SteamPunkNation/Unix-Lark.git /home/travis/Documents/GitHub/Unix-Lark (took 1.445s)
+2022-11-24T20:58:48.949Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-11-24T21:03:12.187Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 1 repositories took 0.3s of which 0.0s paused, total 0.3s
+2022-11-24T21:03:21.114Z - error: [ui] Highlighter worked failed for new contents
+Error: timed out
+    at /home/travis/webpack:/app/src/lib/highlighter/worker.ts:85:14
+2022-11-24T21:05:01.356Z - error: [ui] Highlighter worked failed for new contents
+Error: timed out
+    at /home/travis/webpack:/app/src/lib/highlighter/worker.ts:85:14
+2022-11-24T21:05:08.253Z - error: [ui] Highlighter worked failed for new contents
+Error: timed out
+    at /home/travis/webpack:/app/src/lib/highlighter/worker.ts:85:14
+2022-11-24T21:05:10.415Z - error: [ui] Highlighter worked failed for new contents
+Error: timed out
+    at /home/travis/webpack:/app/src/lib/highlighter/worker.ts:85:14
+2022-11-24T21:05:12.176Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)

@@ -1,0 +1,14 @@
+2022-11-29T19:39:29.843Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-29T19:39:29.843Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-29T19:39:29.978Z - info: [ui] [BranchPruner] Last prune took place in 25 minutes - skipping
+2022-11-29T19:39:30.302Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-29T19:39:30.302Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-29T19:39:30.480Z - info: [ui] Stats reported.
+2022-11-29T19:39:32.632Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-29T19:39:51.511Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-29T19:39:51.511Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-29T19:39:51.765Z - info: [ui] [BranchPruner] Last prune took place in 25 minutes - skipping
+2022-11-29T19:39:51.811Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-29T19:39:51.812Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-29T19:39:53.472Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-29T19:39:55.016Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)

@@ -1,0 +1,8 @@
+2022-11-21T20:10:26.740Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-21T20:10:26.740Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-21T20:10:26.938Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-21T20:10:26.939Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-21T20:10:26.975Z - info: [ui] [BranchPruner] No branches to prune.
+2022-11-21T20:10:27.190Z - info: [ui] Stats reported.
+2022-11-21T20:10:30.966Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-21T20:10:33.997Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 3.023s)

@@ -1,0 +1,51 @@
+2022-11-26T16:10:20.585Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-26T16:10:20.585Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-26T16:10:20.601Z - info: [ui] [fetchProtectedBranches] unable to list protected branches
+TypeError: Failed to fetch
+2022-11-26T16:10:20.607Z - warn: [ui] fetchRepository: an error occurred for 'SteamPunkNation/Unix-Lark'
+TypeError: Failed to fetch
+2022-11-26T16:10:20.738Z - warn: [ui] fetchAccount: failed with endpoint https://api.github.com
+TypeError: Failed to fetch
+2022-11-26T16:10:20.738Z - warn: [ui] fetchUser: failed with endpoint https://api.github.com
+TypeError: Failed to fetch
+2022-11-26T16:10:20.738Z - warn: [ui] Error refreshing account 'TraviPatty03'
+TypeError: Failed to fetch
+2022-11-26T16:10:20.797Z - warn: [ui] fetchIssues: failed for repository steampunknation/Unix-Lark
+TypeError: Failed to fetch
+2022-11-26T16:10:20.797Z - warn: [ui] Unable to fetch issues for steampunknation/Unix-Lark
+TypeError: Failed to fetch
+2022-11-26T16:10:20.824Z - warn: [ui] fetchMentionables: failed for steampunknation/Unix-Lark
+TypeError: Failed to fetch
+2022-11-26T16:10:20.873Z - info: [ui] [BranchPruner] No branches to prune.
+2022-11-26T16:10:20.984Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-26T16:10:20.985Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-26T16:10:21.568Z - error: [ui] Error reporting stats:
+TypeError: Failed to fetch
+2022-11-26T16:10:28.087Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-26T16:10:30.279Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-26T23:18:09.397Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-26T23:18:09.397Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-26T23:18:09.605Z - info: [ui] [BranchPruner] Last prune took place in 17 hours - skipping
+2022-11-26T23:18:09.645Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-26T23:18:09.645Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-26T23:18:10.169Z - info: [ui] Stats reported.
+2022-11-26T23:18:58.571Z - info: [ui] [Timing] Action 'create branch' for 'steampunknation/Unix-Lark' took 0.018s
+2022-11-26T23:19:06.515Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-26T23:19:06.602Z - info: [ui] [Timing] Action 'stash and checkout' for 'steampunknation/Unix-Lark' took 0.083s
+2022-11-26T23:19:11.448Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-26T23:19:12.895Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin Alpha-Timeline --set-upstream --progress (took 1.432s)
+2022-11-26T23:19:19.685Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.000s
+2022-11-26T23:19:23.405Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-26T23:19:42.658Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-26T23:19:42.669Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 19.256s)
+2022-11-26T23:19:42.770Z - info: [ui] [Timing] Action 'stash and checkout' for 'steampunknation/Unix-Lark' took 19.361s
+2022-11-26T23:19:45.880Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-26T23:19:45.962Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.079s
+2022-11-26T23:20:39.034Z - info: [ui] [AppStore. _popStashEntry] popped stash with commit id 62626307ce06a2abd85dbc732fb5756678e9b0c5
+2022-11-26T23:21:22.330Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 20.819s)
+2022-11-26T23:21:22.517Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 21.011s
+2022-11-26T23:21:25.780Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-26T23:21:31.552Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-26T23:21:31.637Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.085s
+2022-11-26T23:21:34.007Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-26T23:21:34.092Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.082s

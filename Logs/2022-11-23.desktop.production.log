@@ -1,0 +1,143 @@
+2022-11-23T01:26:05.745Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-23T01:26:05.745Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-23T01:26:05.943Z - info: [ui] [BranchPruner] No branches to prune.
+2022-11-23T01:26:06.008Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-23T01:26:06.010Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-23T01:26:06.207Z - info: [ui] Stats reported.
+2022-11-23T01:27:24.619Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-23T01:27:24.620Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-23T01:27:24.784Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-11-23T01:27:24.812Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-23T01:27:24.813Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-23T01:27:28.195Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-23T02:34:26.125Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-11-23T02:37:47.392Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-11-23T02:40:59.247Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-23T02:40:59.247Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-23T02:40:59.467Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-11-23T02:40:59.621Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-23T02:40:59.622Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-23T02:41:53.604Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 30.947s)
+2022-11-23T02:41:57.348Z - info: [ui] Executing updateIndex: git update-index --add --remove --force-remove --replace -z --stdin (took 3.744s)
+2022-11-23T02:41:57.490Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 34.843s
+2022-11-23T02:42:05.274Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-23T02:42:09.677Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-23T02:43:13.220Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-23T02:43:18.530Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-23T02:47:01.365Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-23T02:47:11.440Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-11-23T02:47:14.254Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-23T02:47:16.640Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-23T02:47:17.220Z - error: [ui] `git -c credential.helper= -c protocol.version=2 -c rebase.backend=merge pull --progress origin` exited with an unexpected code: 1.
+stdout:
+Updating d24135f..b22adca
+
+stderr:
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+error: Your local changes to the following files would be overwritten by merge:
+	theGame/start.sh
+Please commit your changes or stash them before you merge.
+Aborting
+
+(The error was parsed as 51: null)
+2022-11-23T02:47:24.054Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-23T02:47:24.663Z - error: [ui] `git -c credential.helper= -c protocol.version=2 -c rebase.backend=merge pull --progress origin` exited with an unexpected code: 1.
+stdout:
+Updating d24135f..b22adca
+
+stderr:
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+error: Your local changes to the following files would be overwritten by merge:
+	theGame/start.sh
+Please commit your changes or stash them before you merge.
+Aborting
+
+(The error was parsed as 51: null)
+2022-11-23T02:47:38.444Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-23T02:47:39.052Z - error: [ui] `git -c credential.helper= -c protocol.version=2 -c rebase.backend=merge pull --progress origin` exited with an unexpected code: 1.
+stdout:
+Updating d24135f..b22adca
+
+stderr:
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+error: Your local changes to the following files would be overwritten by merge:
+	theGame/start.sh
+Please commit your changes or stash them before you merge.
+Aborting
+
+(The error was parsed as 51: null)
+2022-11-23T02:47:43.122Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-23T02:47:43.731Z - error: [ui] `git -c credential.helper= -c protocol.version=2 -c rebase.backend=merge pull --progress origin` exited with an unexpected code: 1.
+stdout:
+Updating d24135f..b22adca
+
+stderr:
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+error: Your local changes to the following files would be overwritten by merge:
+	theGame/start.sh
+Please commit your changes or stash them before you merge.
+Aborting
+
+(The error was parsed as 51: null)
+2022-11-23T02:47:53.749Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-23T02:47:57.028Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-23T03:23:41.865Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-23T04:35:18.166Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 116.270s)
+2022-11-23T04:35:22.378Z - info: [ui] Executing createCommit: git commit -F - (took 4.211s)
+2022-11-23T04:35:22.525Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 120.634s
+2022-11-23T04:35:43.881Z - info: [ui] [popStashEntry] a stash was popped successfully but exit code 1 reported.
+2022-11-23T04:35:43.893Z - info: [ui] [AppStore. _popStashEntry] popped stash with commit id 0b1787e07e131292bf133377fc055bee9c56d1a7
+2022-11-23T04:36:14.639Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-23T04:36:14.640Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-23T04:36:14.847Z - info: [ui] [BranchPruner] Last prune took place in 21 hours - skipping
+2022-11-23T04:36:15.094Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-23T04:36:15.094Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-23T04:36:40.401Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)

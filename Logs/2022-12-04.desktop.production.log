@@ -1,0 +1,204 @@
+2022-12-04T01:29:25.282Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-12-04T01:29:25.283Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-12-04T01:29:28.098Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-56-generic)
+2022-12-04T01:29:28.099Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-12-04T01:29:28.167Z - info: [ui] [BranchPruner] Pruning 0 branches that have been merged into the default branch, main (16412d0df17109c0fbf60ec0750b4220cd749b2a), from 'Unix-Lark
+2022-12-04T01:29:28.758Z - info: [ui] Stats reported.
+2022-12-04T01:29:34.004Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.001s
+2022-12-04T01:29:35.937Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:29:37.207Z - info: [ui] [Timing] Action 'stash and checkout' for 'steampunknation/Unix-Lark' took 1.269s
+2022-12-04T01:29:49.610Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:29:49.858Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.246s
+2022-12-04T01:29:54.897Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:29:55.178Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.276s
+2022-12-04T01:29:57.637Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:29:57.884Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.246s
+2022-12-04T01:30:00.563Z - info: [ui] [AppStore. _popStashEntry] popped stash with commit id 2e2c76db88032f29cdce52d8eaeb088a4614382e
+2022-12-04T01:30:08.812Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.000s
+2022-12-04T01:30:12.530Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:30:12.582Z - error: [ui] `git -c credential.helper= -c protocol.version=2 checkout --progress Alpha-Timeline --` exited with an unexpected code: 1.
+stderr:
+error: Your local changes to the following files would be overwritten by checkout:
+	theGame/room0.sh
+	theGame/roomA1.sh
+	theGame/roomA2.sh
+	theGame/roomA3.sh
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+(The error was parsed as 37: Unable to switch branches as there are working directory changes which would be overwritten. Please commit or stash your changes.)
+2022-12-04T01:30:12.725Z - info: [ui] [popStashEntry] a stash was popped successfully but exit code 1 reported.
+2022-12-04T01:30:13.170Z - info: [ui] [Timing] Action 'stash and checkout' for 'steampunknation/Unix-Lark' took 0.638s
+2022-12-04T01:31:02.024Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 0.004s
+2022-12-04T01:32:00.426Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 0.004s
+2022-12-04T01:32:09.127Z - info: [ui] Executing createCommit: git commit -F - (took 4.237s)
+2022-12-04T01:32:12.123Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:32:13.883Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin Alpha-Timeline:Alpha-Timeline --progress (took 1.703s)
+2022-12-04T01:32:21.359Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:32:21.650Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.290s
+2022-12-04T01:32:26.076Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:32:26.301Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.225s
+2022-12-04T01:56:04.924Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 4.752s)
+2022-12-04T01:56:09.176Z - info: [ui] Executing createCommit: git commit -F - (took 4.237s)
+2022-12-04T01:56:09.579Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 9.422s
+2022-12-04T01:56:14.286Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:56:15.558Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin Alpha-Timeline:Alpha-Timeline --progress (took 1.207s)
+2022-12-04T01:56:15.561Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin Alpha-Timeline:Alpha-Timeline --progress` exited with an unexpected code: 1.
+stderr:
+To https://github.com/SteamPunkNation/Unix-Lark.git
+ ! [rejected]        Alpha-Timeline -> Alpha-Timeline (fetch first)
+error: failed to push some refs to 'https://github.com/SteamPunkNation/Unix-Lark.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+(The error was parsed as 10: The repository has been updated since you last pulled. Try pulling before pushing.)
+2022-12-04T01:56:30.457Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:56:38.418Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:56:39.285Z - error: [ui] `git -c credential.helper= -c protocol.version=2 -c rebase.backend=merge pull --progress origin` exited with an unexpected code: 1.
+stdout:
+Removing theGame/roomA5.sh
+Removing theGame/roomA4.sh
+Auto-merging theGame/roomA3.sh
+CONFLICT (content): Merge conflict in theGame/roomA3.sh
+Automatic merge failed; fix conflicts and then commit the result.
+
+stderr:
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+
+(The error was parsed as 7: We found some conflicts while trying to merge. Please resolve the conflicts and commit the changes.)
+2022-12-04T01:57:29.465Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:57:30.358Z - error: [ui] `git -c credential.helper= -c protocol.version=2 -c rebase.backend=merge pull --progress origin` exited with an unexpected code: 1.
+stdout:
+Removing theGame/roomA5.sh
+Removing theGame/roomA4.sh
+Auto-merging theGame/roomA3.sh
+CONFLICT (content): Merge conflict in theGame/roomA3.sh
+Automatic merge failed; fix conflicts and then commit the result.
+
+stderr:
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+
+(The error was parsed as 7: We found some conflicts while trying to merge. Please resolve the conflicts and commit the changes.)
+2022-12-04T01:57:49.320Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:57:51.878Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:57:56.314Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:57:59.141Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin Alpha-Timeline:Alpha-Timeline --progress (took 2.762s)
+2022-12-04T01:58:56.825Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:58:56.871Z - error: [ui] `git -c credential.helper= -c protocol.version=2 revert 017a472ab2d4b0b2b90de7778121d0a6ee07781b` exited with an unexpected code: 1.
+stdout:
+Auto-merging theGame/roomA3.sh
+CONFLICT (content): Merge conflict in theGame/roomA3.sh
+
+stderr:
+error: could not revert 017a472... Revert "Update roomA3.sh"
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'
+
+(The error was parsed as 13: To finish reverting, please merge and commit the changes.)
+2022-12-04T01:59:10.912Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 0.002s
+2022-12-04T01:59:16.716Z - info: [ui] Executing createCommit: git commit -F - (took 2.726s)
+2022-12-04T01:59:18.854Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T01:59:20.502Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin Alpha-Timeline:Alpha-Timeline --progress (took 1.586s)
+2022-12-04T01:59:31.743Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T02:17:04.887Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 4.747s)
+2022-12-04T02:17:09.111Z - info: [ui] Executing createCommit: git commit -F - (took 4.210s)
+2022-12-04T02:17:09.570Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 9.456s
+2022-12-04T02:20:13.958Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 4.285s)
+2022-12-04T02:20:17.889Z - info: [ui] Executing createCommit: git commit -F - (took 3.916s)
+2022-12-04T02:20:18.243Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 8.582s
+2022-12-04T02:20:22.866Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T02:20:24.756Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin Alpha-Timeline:Alpha-Timeline --progress (took 1.836s)
+2022-12-04T02:21:26.628Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 2.464s)
+2022-12-04T02:21:27.764Z - info: [ui] Executing createCommit: git commit -F - (took 1.135s)
+2022-12-04T02:21:28.286Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 4.146s
+2022-12-04T02:21:29.839Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T02:21:31.516Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin Alpha-Timeline:Alpha-Timeline --progress (took 1.647s)
+2022-12-04T02:23:25.013Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T02:25:25.934Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-12-04T02:25:25.936Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-12-04T02:25:26.427Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-12-04T02:25:26.724Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-56-generic)
+2022-12-04T02:25:26.724Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-12-04T02:25:33.440Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 3.201s)
+2022-12-04T02:25:34.578Z - info: [ui] Executing createCommit: git commit -F - (took 1.136s)
+2022-12-04T02:25:35.036Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 4.828s
+2022-12-04T02:25:36.167Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T02:25:37.881Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin Alpha-Timeline:Alpha-Timeline --progress (took 1.670s)
+2022-12-04T02:27:24.470Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-12-04T02:27:24.471Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-12-04T02:27:24.867Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-12-04T02:27:25.092Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-56-generic)
+2022-12-04T02:27:25.093Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-12-04T02:27:30.148Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T02:27:30.364Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.212s
+2022-12-04T02:29:00.766Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-12-04T02:29:00.767Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-12-04T02:29:01.127Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-12-04T02:29:01.496Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-56-generic)
+2022-12-04T02:29:01.497Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-12-04T02:29:06.696Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T02:29:14.214Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T02:29:38.439Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T02:29:44.846Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T02:29:46.872Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T02:30:40.242Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 4.430s)
+2022-12-04T02:30:41.312Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 5.522s
+2022-12-04T02:30:44.938Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T02:30:46.718Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin main:main --progress (took 1.743s)
+2022-12-04T02:30:52.088Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 5.328s)
+2022-12-04T02:43:08.199Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 3.034s)
+2022-12-04T02:43:09.355Z - info: [ui] Executing createCommit: git commit -F - (took 1.142s)
+2022-12-04T02:43:09.767Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 4.616s
+2022-12-04T02:43:10.945Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T02:43:12.236Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin main:main --progress (took 1.259s)
+2022-12-04T02:59:38.822Z - warn: [ui] getFetchPollInterval: failed for steampunknation/Unix-Lark
+TypeError: Failed to fetch
+2022-12-04T03:15:48.544Z - warn: [ui] failed fetching updated PRs for repository steampunknation/Unix-Lark
+TypeError: Failed to fetch
+2022-12-04T03:15:48.546Z - error: [ui] Error refreshing pull requests for 'steampunknation/Unix-Lark'
+TypeError: Failed to fetch
+2022-12-04T03:16:14.605Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 2.360s)
+2022-12-04T03:16:15.901Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 3.669s
+2022-12-04T03:16:17.117Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T03:16:17.189Z - error: [ui] `git -c credential.helper= -c protocol.version=2 push origin main:main --progress` exited with an unexpected code: 128.
+stderr:
+fatal: unable to access 'https://github.com/SteamPunkNation/Unix-Lark.git/': Could not resolve host: github.com
+
+2022-12-04T03:38:17.325Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 16.091s)
+2022-12-04T03:38:18.502Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 17.293s
+2022-12-04T03:38:20.129Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T03:38:21.651Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin main:main --progress (took 1.478s)
+2022-12-04T03:40:07.581Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T03:46:09.547Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 6.602s)
+2022-12-04T03:46:10.483Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 7.559s
+2022-12-04T03:46:10.877Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-12-04T03:46:12.581Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin main:main --progress (took 1.661s)
+2022-12-04T03:46:57.198Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)

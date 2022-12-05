@@ -1,0 +1,7 @@
+2022-11-30T22:43:04.712Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-30T22:43:04.713Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-30T22:43:05.287Z - info: [ui] [BranchPruner] Pruning 0 branches that have been merged into the default branch, main (16412d0df17109c0fbf60ec0750b4220cd749b2a), from 'Unix-Lark
+2022-11-30T22:43:05.379Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-30T22:43:05.380Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-30T22:43:05.586Z - info: [ui] Stats reported.
+2022-11-30T22:43:07.233Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)

@@ -1,0 +1,6 @@
+2022-11-16T23:00:48.691Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-16T23:00:48.691Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-16T23:00:48.956Z - info: [ui] [BranchPruner] No branches to prune.
+2022-11-16T23:00:48.975Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-52-generic)
+2022-11-16T23:00:48.976Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-16T23:00:49.195Z - info: [ui] Stats reported.

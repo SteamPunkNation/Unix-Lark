@@ -1,0 +1,12 @@
+2022-11-25T00:51:30.931Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 1 repositories took 0.6s of which 0.0s paused, total 0.6s
+2022-11-25T00:51:35.663Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-25T00:51:35.664Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-25T00:51:35.847Z - info: [ui] [BranchPruner] Last prune took place in 19 hours - skipping
+2022-11-25T00:51:35.945Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-25T00:51:35.946Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-25T00:51:46.740Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-25T00:52:16.877Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/SteamPunkNation/Unix-Lark.git - TraviPatty03 (has token)
+2022-11-25T00:52:18.056Z - info: [ui] Executing clone: git -c credential.helper= -c protocol.version=2 clone --recursive --progress -- https://github.com/SteamPunkNation/Unix-Lark.git /home/travis/Documents/GitHub/Unix-Lark (took 1.158s)
+2022-11-25T00:52:18.132Z - info: [ui] [BranchPruner] Last prune took place in 19 hours - skipping
+2022-11-25T00:52:20.312Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-25T04:52:18.142Z - info: [ui] [BranchPruner] Last prune took place in 15 hours - skipping

@@ -1,0 +1,35 @@
+2022-11-28T14:05:43.510Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-28T14:05:43.510Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-28T14:05:43.793Z - info: [ui] [BranchPruner] Last prune took place in 3 hours - skipping
+2022-11-28T14:05:43.828Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-28T14:05:43.829Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-28T14:05:44.160Z - info: [ui] Stats reported.
+2022-11-28T14:05:49.314Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-28T14:05:49.543Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.230s
+2022-11-28T14:05:57.355Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-28T14:06:05.388Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-28T14:06:05.534Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.146s
+2022-11-28T14:06:08.629Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-28T14:06:08.776Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.147s
+2022-11-28T14:06:13.907Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-28T14:10:44.816Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-28T14:10:44.979Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.162s
+2022-11-28T14:10:52.445Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-28T14:10:52.601Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.156s
+2022-11-28T14:41:41.580Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-28T14:41:41.581Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-28T14:41:41.750Z - info: [ui] [BranchPruner] Last prune took place in 3 hours - skipping
+2022-11-28T14:41:41.920Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-28T14:41:41.921Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-28T14:41:50.488Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-28T20:04:23.696Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-28T20:04:23.697Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-28T20:04:24.135Z - info: [ui] [BranchPruner] Pruning 0 branches that have been merged into the default branch, main (16412d0df17109c0fbf60ec0750b4220cd749b2a), from 'Unix-Lark
+2022-11-28T20:04:24.203Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-28T20:04:24.204Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-28T21:34:02.767Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-28T21:34:02.768Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-28T21:34:02.929Z - info: [ui] [BranchPruner] Last prune took place in a day - skipping
+2022-11-28T21:34:03.104Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-28T21:34:03.104Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-28T21:34:07.647Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)

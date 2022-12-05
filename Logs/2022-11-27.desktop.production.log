@@ -1,0 +1,44 @@
+2022-11-27T17:32:34.349Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-27T17:32:34.349Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-27T17:32:34.787Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-27T17:32:34.788Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-27T17:32:34.806Z - info: [ui] [BranchPruner] No branches to prune.
+2022-11-27T17:32:54.462Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.001s
+2022-11-27T17:32:58.694Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-27T17:32:58.925Z - info: [ui] [Timing] Action 'stash and checkout' for 'steampunknation/Unix-Lark' took 0.231s
+2022-11-27T17:33:20.515Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-27T17:33:20.641Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.126s
+2022-11-27T17:42:18.399Z - info: [ui] No submodules found. Skipping "git submodule status"
+2022-11-27T17:42:59.115Z - info: [ui] Executing checkoutIndex: git checkout-index -f -u -q --stdin -z (took 40.666s)
+2022-11-27T17:43:29.975Z - info: [ui] No submodules found. Skipping "git submodule status"
+2022-11-27T17:45:11.014Z - info: [ui] Executing checkoutIndex: git checkout-index -f -u -q --stdin -z (took 101.021s)
+2022-11-27T17:46:25.351Z - info: [ui] No submodules found. Skipping "git submodule status"
+2022-11-27T17:48:06.718Z - info: [ui] Executing checkoutIndex: git checkout-index -f -u -q --stdin -z (took 101.337s)
+2022-11-27T17:48:12.325Z - info: [ui] No submodules found. Skipping "git submodule status"
+2022-11-27T17:48:58.367Z - info: [ui] No submodules found. Skipping "git submodule status"
+2022-11-27T17:48:58.392Z - info: [ui] Executing checkoutIndex: git checkout-index -f -u -q --stdin -z (took 46.046s)
+2022-11-27T17:49:00.051Z - info: [ui] No submodules found. Skipping "git submodule status"
+2022-11-27T17:49:22.935Z - info: [ui] No submodules found. Skipping "git submodule status"
+2022-11-27T17:49:22.947Z - info: [ui] Executing checkoutIndex: git checkout-index -f -u -q --stdin -z (took 22.890s)
+2022-11-27T17:49:26.331Z - info: [ui] [AppStore. _popStashEntry] popped stash with commit id 2d21543f5dd45b52f998746d625d998516725e15
+2022-11-27T17:55:13.906Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 114.799s)
+2022-11-27T17:55:15.129Z - info: [ui] Executing updateIndex: git update-index --add --remove --force-remove --replace -z --stdin (took 1.223s)
+2022-11-27T17:55:15.379Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 116.283s
+2022-11-27T17:55:30.500Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-27T17:55:31.614Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin Alpha-Timeline:Alpha-Timeline --progress (took 1.093s)
+2022-11-27T20:14:41.618Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 8.910s)
+2022-11-27T20:14:44.258Z - info: [ui] Executing createCommit: git commit -F - (took 2.636s)
+2022-11-27T20:14:44.480Z - info: [ui] [Timing] Action 'create commit' for 'steampunknation/Unix-Lark' took 11.791s
+2022-11-27T20:14:58.349Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-27T20:14:59.708Z - info: [ui] Executing push: git -c credential.helper= -c protocol.version=2 push origin Alpha-Timeline:Alpha-Timeline --progress (took 1.307s)
+2022-11-27T20:15:00.777Z - info: [ui] Executing fetch: git -c credential.helper= -c protocol.version=2 fetch --progress --prune origin (took 1.053s)
+2022-11-27T20:16:54.647Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-27T21:11:59.615Z - info: [ui] [AppStore] loading 1 repositories from store
+2022-11-27T21:11:59.615Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-27T21:11:59.808Z - info: [ui] [BranchPruner] Last prune took place in 20 hours - skipping
+2022-11-27T21:11:59.964Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-53-generic)
+2022-11-27T21:11:59.966Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-27T21:12:02.239Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-27T21:12:02.351Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.112s
+2022-11-27T21:12:07.974Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-27T21:12:08.111Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.134s

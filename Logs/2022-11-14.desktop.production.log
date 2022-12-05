@@ -1,0 +1,11 @@
+2022-11-14T23:20:01.799Z - info: [ui] [AppStore] loading 0 repositories from store
+2022-11-14T23:20:01.799Z - info: [ui] [AppStore] found account: TraviPatty03 (TraviPatty03)
+2022-11-14T23:20:01.869Z - info: [ui] launching: 2.6.3-linux1 (Linux 5.15.0-52-generic)
+2022-11-14T23:20:01.870Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2022-11-14T23:20:02.029Z - info: [ui] Stats reported.
+2022-11-14T23:20:26.243Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/SteamPunkNation/Unix-Lark.git - TraviPatty03 (has token)
+2022-11-14T23:20:27.000Z - info: [ui] [AppStore] adding repository at /home/travis/Documents/GitHub/Unix-Lark to store
+2022-11-14T23:20:27.331Z - info: [ui] [BranchPruner] No branches to prune.
+2022-11-14T23:20:31.912Z - info: [ui] [Timing] Action 'checkout branch from list' for 'steampunknation/Unix-Lark' took 0.000s
+2022-11-14T23:22:21.015Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: Unix-Lark - TraviPatty03 (has token)
+2022-11-14T23:22:21.635Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 1 repositories took 0.8s of which 0.0s paused, total 0.8s
