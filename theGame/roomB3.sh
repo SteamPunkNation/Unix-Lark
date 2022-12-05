@@ -9,7 +9,8 @@ helpInfo=(
 	"Commands:"
 	"btn: Press the button"
 	"ls: Look at your surroundings"
-	"cd: Change your location"
+	"cd: Change your location to a door name or go back with (back)"
+	"cat: Inspects items, anything in () is the name you should enter."
 	"help: For this list"
 	"quit: Quit game"
 )
@@ -20,11 +21,25 @@ btnPress=(
 	"${ImportantColor}Game Over${DefaultColor}"
 )
 lookAround=(
-	"There is nothing in the room but a (door) labeled B3."
-	"On the door is a circular object cut into fours."
+	"There is nothing in the room but a door labeled B3."
+	"On the door is a circular (lock) cut into fours."
 	"Each section on the object has four different colors."
 	"Green, Red, Yellow, and Blue."
 	"Each of the four colors glow simultaneously in a breathing pattern."
+	"There is also a sticky (note) to the left of the lock."
+)
+note=(
+	"The note contains some chicken scratch which was hard to read but you believe it says..."
+	"${ImportantColor} The sky during mid-day."
+	"Avacado insides."
+	"Top light in a traffic light."
+	"Wet floor sign."
+	"Stop sign"
+	"McDonalds Arches"
+	"Florida Poly main color"
+	"Snow"
+	"${DefaultColor}(Hint: the only colors you should get are Red, Blue, Green, Yellow, Purple, White)"
+	"(Hint: For the puzzle in this room you just need the color inital with capitalization)"
 )
 
 #Room vars
@@ -83,100 +98,46 @@ function LookAround(){
 	done
 }
 
+function noteScript(){
+	for str in "${note[@]}"; do
+		echo $str
+		sleep 1
+	done
+}
+
+function lockFunction(){
+	echo "Enter your code like this example 'WGBR' note this is not the answer."
+	read -p "What is the code? >" colorCode
+	if [[ $colorCode == "BGRYRYPW" ]]
+	then
+		nextRoom=true
+		echo "Correct code!"
+		echo "Door now unlocking."
+	else
+		echo "Incorrect code!"
+	fi
+}
+
 function Inspect(){
 	read -p "What do you want to inspect? >" inspectedObject
 	case $inspectedObject in
-		door)
-			simonStart
+		note)
+			noteScript
+		;;
+		lock)
+			lockFunction
 		;;
 		*)
 			echo "Invalid entry."
 		;;
 	esac
 }
-#########################
-#Simon color game
-function simonStart(){
-	#Rules of simon
-	echo "Rules:"
-	echo "All you have to do is enter the colors in order."
-	echo "For example if the color is red when this '>' is shown type your color and press enter."
-	echo "Each color should be entered seperately."
-	echo "If you enter all colors correctly the order will be repeated with one more color."
-	echo "Once you enter a wrong color the game is over."
-	echo "You win simon gives up."
 
-	read -p "Ready to start? (y/n)> " startGame
-	if [[ $startGame == "y" ]]
-	then
-		simonGame
-	else
-		echo "You decided to back away from the door."
-	fi
-}
-function simonGameColorPicker(){
-	randNum=$((1 + $RANDOM % 4))
-	case $randNum in
-		1)
-			echo "green"
-		;;
-		2)
-			echo "red"
-		;;
-		3)
-			echo "yellow"
-		;;
-		4)
-			echo "blue"
-		;;
-	esac
-}
-function simonGameMain(){
-	currentPatttern=()
-	playerCount=0
-	#Get 10 random colors
-	for i in {1..10};
-	do
-		local color=$(simonGameColorPicker)
-		currentPatttern+=($color)
-	done
-
-	#Main game
-	for n in {1..10};
-	do
-		playerCount=$((playerCount + 1))
-		for j in $playerCount
-		do
-			#List current pattern
-			for listPattern in $playerCount
-			do
-				echo ${currentPatttern[listPattern]}
-			done
-
-			#get input
-			read -p "Enter Color > " playerColor
-			if [[ $playerColor != ${currentPatttern[j]} ]]
-			then
-				echo "Incorrect Color!"
-				echo "Exiting game!"
-				break
-			fi
-		done
-	done
-	echo "You win!"
-
-
-
-}
 #########################
 #Start of the actual room
 while [[ $REPLY != 0 ]]; do
 	read -p "What do you want to do? >" selection
 	case $selection in
-		test)
-			simonGameMain
-		;;
-		#DELETE ABOVE CASE USED FOR TESTING
 		ls)
 			LookAround
 		;;
