@@ -1,23 +1,10 @@
 #!/bin/bash
-
-#NOTE FOR TESTING DIRECTLY ./roomTemplate.sh
-#THIS WILL NOT MAKE THE CONSOLE GREEN BY DEFAULT
-#YOU WILL NEED TO MAKE SURE IT WORKS WITH THE FIRST
-#ROOM AS TO NOT BREAK THE GAME
 #########################
 #Variables
-
-#Color Vars
-#Colors can be added but these were just some
-#that I thought should be universal 
-#with all the rooms
 PersonColor="$(tput setaf 6)"
 DefaultColor="$(tput setaf 2)"
 ImportantColor="$(tput setaf 1)"
 
-#Text Vars
-#Help info should be constant if needed change
-#It should be changed accross all files.
 helpInfo=(
 	"Commands:"
 	"btn: Press the button"
@@ -27,20 +14,21 @@ helpInfo=(
 	"quit: Quit game"
 )
 btnPress=(
-	"Button was pressed."
+	"The circular four segmented object on the door glows red."
+	"${PersonColor}(Simon Says) Simon says you're done for."
+	"${DefaultColor} You lost the game and therefore your life."
 	"${ImportantColor}Game Over${DefaultColor}"
-	#Change this to your fitting
-	#or don't use it at all
-	#recommended to keep game over if btn in 
-	#your case ends the game
 )
 lookAround=(
-	"Room is empty."
-	#Fill this section with how you want to
-	#describe the room and it's surrounding
-	#objects that you can interact with.
+	"There is nothing in the room but a (door) labeled B3."
+	"On the door is a circular object cut into fours."
+	"Each section on the object has four different colors."
+	"Green, Red, Yellow, and Blue."
+	"Each of the four colors glow simultaneously in a breathing pattern."
 )
 
+#Room vars
+nextRoom=false
 
 #########################
 #Functions
@@ -55,17 +43,23 @@ echo ""
 function RoomChange(){
 	read -p "Where do you want to go? >" selection
 	case $selection in 
-		Z1)
-			#This can be changed
-			echo "Next room confirmed"
-			#THIS MUST BE ADDED AS TO QUIT THE ENTIRE
-			#GAME OR ELSE IT LOOPS BACK TO PREVIOUS
-			#SCRIPT
-			break
-		;;
-		#You should also make it so the play can go back
-		#a room when you add more options in this
-		#function
+		B4)
+			if [[ $nextRoom == true ]]
+			then
+				./roomB4.sh
+				exit 0
+			else
+				echo "The door is locked with some circular four colored device."
+			fi
+			;;
+		back)
+			echo "Are you sure you want to go back?"
+			read -p "You will have to redo the room again. >" goBack
+			if [[ $goBack == "yes" ]]
+			then
+				./roomB2.sh
+			fi
+			;;
 		*)
 			echo "Not a valid room!"
 		;;
@@ -88,47 +82,125 @@ function LookAround(){
 		sleep 1
 	done
 }
+
+function Inspect(){
+	read -p "What do you want to inspect? >" inspectedObject
+	case $inspectedObject in
+		door)
+			simonStart
+		;;
+		*)
+			echo "Invalid entry."
+		;;
+	esac
+}
+#########################
+#Simon color game
+function simonStart(){
+	#Rules of simon
+	echo "Rules:"
+	echo "All you have to do is enter the colors in order."
+	echo "For example if the color is red when this '>' is shown type your color and press enter."
+	echo "Each color should be entered seperately."
+	echo "If you enter all colors correctly the order will be repeated with one more color."
+	echo "Once you enter a wrong color the game is over."
+	echo "You win simon gives up."
+
+	read -p "Ready to start? (y/n)> " startGame
+	if [[ $startGame == "y" ]]
+	then
+		simonGame
+	else
+		echo "You decided to back away from the door."
+	fi
+}
+function simonGameColorPicker(){
+	randNum=$((1 + $RANDOM % 4))
+	case $randNum in
+		1)
+			echo "green"
+		;;
+		2)
+			echo "red"
+		;;
+		3)
+			echo "yellow"
+		;;
+		4)
+			echo "blue"
+		;;
+	esac
+}
+function simonGameMain(){
+	currentPatttern=()
+	playerCount=0
+	#Get 10 random colors
+	for i in {1..10};
+	do
+		local color=$(simonGameColorPicker)
+		currentPatttern+=($color)
+	done
+
+	#Main game
+	for n in {1..10};
+	do
+		playerCount=$((playerCount + 1))
+		for j in $playerCount
+		do
+			#List current pattern
+			for listPattern in $playerCount
+			do
+				echo ${currentPatttern[listPattern]}
+			done
+
+			#get input
+			read -p "Enter Color > " playerColor
+			if [[ $playerColor != ${currentPatttern[j]} ]]
+			then
+				echo "Incorrect Color!"
+				echo "Exiting game!"
+				break
+			fi
+		done
+	done
+	echo "You win!"
+
+
+
+}
 #########################
 #Start of the actual room
-clear
-echo "**Entered room (B3)**"
-echo "CONGRATS YOU'VE GOTTEN ENDING 1/?"
-echo "Try doing the other path to get other endings?"
-read -p "Press any key to exit"
-
-#NOT USED YET STILL IN DEV
-# while [[ $REPLY != 0 ]]; do
-# 	read -p "What do you want to do? >" selection
-# 	case $selection in
-# 		#More cases can be added but it is 
-# 		#recommended to make functions first then
-# 		#add cases to make it look cleaner and
-# 		#easier to read
-# 		ls)
-# 			LookAround
-# 		;;
-# 		help) 
-# 			HelpInfo
-# 		;;
-# 		cd) 
-# 			RoomChange
-# 		;;
-# 		btn)
-# 			#In most cases I believe pushing the button
-# 			#should make it so the game ends
-# 			#but you can remove the break cmd
-# 			#if you choose so
-# 			ButtonPressed
-# 			break
-# 		;;
-# 		quit)
-# 			break
-# 		;;
-# 		*) 
-# 			echo "Invalid entry."
-# 		;;
-# 	esac
-# 	echo "Press any key to continue"
-# 	read -n 1
-# 	clear
-#done
+while [[ $REPLY != 0 ]]; do
+	read -p "What do you want to do? >" selection
+	case $selection in
+		test)
+			simonGameMain
+		;;
+		#DELETE ABOVE CASE USED FOR TESTING
+		ls)
+			LookAround
+		;;
+		help) 
+			HelpInfo
+		;;
+		cd) 
+			RoomChange
+		;;
+		cat)
+			Inspect
+		;;
+		btn)
+			ButtonPressed
+			exit 0
+		;;
+		quit)
+			exit 0
+		;;
+		*) 
+			echo "Invalid entry."
+		;;
+	esac
+	echo "Press any key to continue"
+	read -n 1
+	clear
+done

@@ -68,7 +68,7 @@ function RoomChange(){
 			if [[ $nextDoor == true ]]
 			then
 				./roomB3.sh
-				break
+				exit 0
 			else
 				echo "Door? What door?"
 			fi
@@ -76,8 +76,12 @@ function RoomChange(){
 		back)
 			if [[ $nextDoor == true ]]
 			then
-				./roomB1.sh
-				break
+				echo "Are you sure you want to go back?"
+				read -p "You will have to redo the room again. >" goBack
+				if [[ $goBack == "yes" ]]
+				then
+					./roomB1.sh
+				fi
 			else
 				echo "Door? What door?"
 			fi
@@ -197,10 +201,10 @@ while [[ $REPLY != 0 ]]; do
 		;;
 		btn)
 			ButtonPressed
-			break
+			exit 0
 		;;
 		quit)
-			break
+			exit 0
 		;;
 		*) 
 			echo "Invalid entry."

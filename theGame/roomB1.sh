@@ -51,7 +51,7 @@ function RoomChange(){
 			then
 				echo "Next room confirmed"
 				./roomB2.sh
-				break
+				exit 0
 			else 
 				echo "The door appears to be firmly held in place by some metal rods."
 				sleep 1
@@ -60,8 +60,12 @@ function RoomChange(){
 			fi
 		;;
 		back)
-			./room0.sh
-			break
+			echo "Are you sure you want to go back?"
+			read -p "You will have to redo the room again. >" goBack
+			if [[ $goBack == "yes" ]]
+			then
+				./room0.sh
+			fi
 		;;
 		*)
 			echo "Not a valid room!"
@@ -77,7 +81,7 @@ function ButtonPressed(){
 		sleep 1
 	done
 	read -p "Press any key to exit"
-	break
+	exit 0
 }
 #Should be constant
 function LookAround(){
@@ -150,7 +154,7 @@ while [[ $REPLY != 0 ]]; do
 			ButtonPressed
 		;;
 		quit)
-			break
+			exit 0
 		;;
 		*) 
 			echo "Invalid entry."
