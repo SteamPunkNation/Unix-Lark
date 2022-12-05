@@ -18,6 +18,9 @@ introArray=(
     "${PersonColor}(Narrator): ${ImportantColor}THE"
     "${PersonColor}(Narrator): ${ImportantColor}BUTTON."
     "${PersonColor}(Narrator): Thanks, I'll be back in a bit."
+    ""
+    "***When entering commands use this format \" (command) *Enter* (choice)\""
+    ""
     "${DefaultColor}Press any key to continue"
 )
 helpInfo=(
